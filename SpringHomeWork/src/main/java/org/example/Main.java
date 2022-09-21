@@ -11,9 +11,11 @@ public class Main {
         Herbal herbal2 = context.getBean("herbalBean", Herbal.class);
         Dairy dairy1 = context.getBean("dairyBean", Dairy.class);
         Dairy dairy2 = context.getBean("dairyBean", Dairy.class);
-
-        System.out.println(fridge + " " +  fridge.productsList);
-
+        fridge.setProductsList(herbal1);
+        fridge.setProductsList(herbal2);
+        fridge.setProductsList(dairy1);
+        fridge.setProductsList(dairy2);
+        fridge.PrintProductsList();
 
     }
 }

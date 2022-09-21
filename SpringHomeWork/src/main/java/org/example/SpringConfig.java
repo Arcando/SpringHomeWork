@@ -20,7 +20,7 @@ public class SpringConfig {
     }
 
     @Bean("fridgeBean")
-    public Fridge fridge(){
+    public Fridge fridge() {
         return new Fridge();
     }
 }
